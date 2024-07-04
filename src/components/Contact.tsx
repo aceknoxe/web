@@ -76,49 +76,53 @@ const ContactForm: React.FC = () => {
   return (
     <div className="bg-opacity-50 bg-emerald-50 flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-lg p-8 rounded-lg shadow-md text-center mt-3">
-        <h1 className="mt-4 py-1 text-6xl font-medium text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">Contact us</h1>
-        <p className="mt-6 text-center text-gray-700">Email us at robotics@gecwyd.ac.in or message us here:</p>
+        <h1 className="mt-4 py-1 text-4xl font-semibold text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
+          Contact us
+        </h1>
+        <p className="mt-6 text-center text-gray-700">
+          Email us at robotics@gecwyd.ac.in or message us here:
+        </p>
 
         <form onSubmit={handleSubmit} className="mt-10">
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div className="relative z-0">
+          <div className="grid gap-6 sm:grid-cols-1">
+            <div className="relative z-0 mb-5">
               <input
                 type="text"
                 name="name"
-                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0"
                 placeholder=" "
                 value={formData.name}
                 onChange={handleChange}
               />
-              <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
+              <label className="absolute left-0 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
                 Name
               </label>
               {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
             </div>
-            <div className="relative z-0">
+            <div className="relative z-0 mb-5">
               <input
                 type="email"
                 name="email"
-                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0"
                 placeholder=" "
                 value={formData.email}
                 onChange={handleChange}
               />
-              <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
+              <label className="absolute left-0 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
                 Email
               </label>
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
             </div>
-            <div className="relative z-0 col-span-2">
+            <div className="relative z-0 mb-5">
               <textarea
                 name="message"
                 rows={5}
-                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-3 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-3 px-0 text-sm text-gray-900 focus:border-green-500 focus:outline-none focus:ring-0"
                 placeholder=" "
                 value={formData.message}
                 onChange={handleChange}
               />
-              <label className="absolute left-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
+              <label className="absolute left-0 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-green-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-800">
                 Message
               </label>
               {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
@@ -126,11 +130,15 @@ const ContactForm: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="mt-5 w-full rounded-2xl bg-green-400 px-10 py-2 text-black hover:bg-green-500 focus:outline-none focus:bg-green-500"
+            className="mt-5 w-full rounded-2xl bg-green-500 px-10 py-2 text-white hover:bg-green-600 focus:outline-none focus:bg-green-600"
           >
             Send Message
           </button>
-          {isSubmitted && <p className="text-green-500 mt-4 text-center">Message sent successfully!</p>}
+          {isSubmitted && (
+            <p className="text-green-500 mt-4 text-center">
+              Message sent successfully!
+            </p>
+          )}
         </form>
       </div>
     </div>

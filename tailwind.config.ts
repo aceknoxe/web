@@ -7,12 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    extend: {},
+    boxShadow: {
+      'green-200': '5px 5px rgba(203, 215, 193, 0.4), 10px 10px rgba(203, 215, 193, 0.3),15px 15px rgba(203, 215, 193, 0.2), 20px 20px rgba(203, 215, 193, 0.1), 25px 25px rgba(203, 215, 193, 0.05)',
     },
   },
   plugins: [],

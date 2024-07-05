@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link'; // Import Link from Next.js
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,42 +52,36 @@ const Header: React.FC = () => {
             className={`fixed mt-6 top-14 right-10  md:top-2 md:right-20 w-47 bg-green-50 shadow-lg rounded-lg md:flex md:w-auto md:shadow-none md:bg-transparent transition-all duration-300 ${isOpen ? 'block' : 'hidden'}`}
           >
             <nav className="flex flex-col p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-6 md:p-0 ">
-              <a
-                href="/"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center "
-              >
-                Home
-              </a>
-              <a
-                href="about"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center "
-              >
-                About
-              </a>
-              <a
-                href="contact"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center"
-              >
-                Contact
-              </a>
-              <a
-                href="gallery"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center"
-              >
-                Gallery
-              </a>
-              <a
-                href="members"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center"
-              >
-                Execome
-              </a>
-              <a
-                href="blogs"
-                className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center"
-              >
-                Blogs
-              </a>
+              <Link href="/">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  Home
+                </a>
+              </Link>
+              <Link href="/about">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  About
+                </a>
+              </Link>
+              <Link href="/contact">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  Contact
+                </a>
+              </Link>
+              <Link href="/gallery">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  Gallery
+                </a>
+              </Link>
+              <Link href="/members">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  Execome
+                </a>
+              </Link>
+              <Link href="/blogs">
+                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+                  Blogs
+                </a>
+              </Link>
             </nav>
           </motion.div>
         </AnimatePresence>

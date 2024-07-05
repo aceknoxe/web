@@ -52,35 +52,35 @@ const Header: React.FC = () => {
             className={`fixed mt-6 top-14 right-10  md:top-2 md:right-20 w-47 bg-green-50 shadow-lg rounded-lg md:flex md:w-auto md:shadow-none md:bg-transparent transition-all duration-300 ${isOpen ? 'block' : 'hidden'}`}
           >
             <nav className="flex flex-col p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-6 md:p-0 ">
-              <Link href="/">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   Home
-                </a>
+               
               </Link>
-              <Link href="/about">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/about"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   About
-                </a>
+                
               </Link>
-              <Link href="/contact">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/contact"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   Contact
-                </a>
+                
               </Link>
-              <Link href="/gallery">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/gallery"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   Gallery
-                </a>
+                
               </Link>
-              <Link href="/members">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/members"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   Execome
-                </a>
+                
               </Link>
-              <Link href="/blogs">
-                <a className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center">
+              <Link href="/blogs"
+                 className="text-gray-800 hover:text-green-900 transition-colors rounded-xl border border-green-300 px-4 py-2 text-center block">
                   Blogs
-                </a>
+                
               </Link>
             </nav>
           </motion.div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Demo: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Demo: React.FC = () => {
               Product in Action
             </div>
             <h1 className="text-3xl font-semibold text-gray-800 md:text-5xl">
-              Here's a demo
+              Here&apos;s a demo
             </h1>
             <p className="mx-auto text-xl md:w-2/3 md:text-2xl text-gray-800">
               Talk a little bit about the product here and how it can be revolutionary.
@@ -28,11 +29,15 @@ const Demo: React.FC = () => {
         <p className="mt-4 text-lg font-normal lg:max-w-3xl text-gray-700">
           Aliquam ultrices sagittis orci a scelerisque purus. Ligula ullamcorper malesuada proin libero nunc consequat.
         </p>
-        <img
-          src="images/product.png"
-          className="mt-8 rounded-xl"
-          alt="placeholder"
-        />
+        <div className="relative mt-8 rounded-xl h-96">
+          <Image
+            src="/images/product.png"
+            alt="placeholder"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-xl"
+          />
+        </div>
         <div className="grid grid-cols-1 grid-rows-1 gap-2 mt-4 md:auto-cols-auto md:grid-cols-3">
           <div className="flex flex-col justify-between p-5 transition duration-500 border-2 shadow-md border-transparent rounded-xl bg-emerald-200 bg-opacity-30 hover:border-emerald-300 hover:shadow-xl md:col-span-2">
             <div>
@@ -66,11 +71,15 @@ const Demo: React.FC = () => {
         <p className="mt-4 text-lg font-normal lg:max-w-3xl text-gray-700">
           Aliquam ultrices sagittis orci a scelerisque purus. Ligula ullamcorper malesuada proin libero nunc consequat.
         </p>
-        <img
-          src="images/product.png"
-          className="mt-8 rounded-xl"
-          alt="placeholder"
-        />
+        <div className="relative mt-8 rounded-xl h-96">
+          <Image
+            src="/images/product.jpg"
+            alt="placeholder"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-xl"
+          />
+        </div>
         <div className="grid grid-cols-1 grid-rows-1 gap-2 mt-4 md:auto-cols-auto md:grid-cols-3">
           <div className="flex flex-col justify-between p-5 transition duration-500 border-2 shadow-md border-transparent rounded-xl bg-emerald-200 bg-opacity-30 hover:border-emerald-300 hover:shadow-xl">
             <div>

@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
           <p className="text tex-semibold">
             Made by{' '}
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/harigovindes"
               className="underline text-green-300 hover:text-green-500"
               target="_blank"
               rel="noopener noreferrer"

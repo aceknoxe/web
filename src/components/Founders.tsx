@@ -1,22 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-type TweetProps = {
-  name: string;
-  position: string;
-  text: string;
-  photoLink?: string;
-  linkedinLink?: string;
-};
-
-const Tweet: React.FC<TweetProps> = ({ name, position, text, photoLink, linkedinLink }) => {
-  // Default photo link if not provided
-  const defaultPhotoLink = '/default-photo.jpg'; // Adjust with a default image path if needed
+const Tweet: React.FC<{ name: string, position: string, text: string, photoLink: string, linkedinLink?: string }> = ({ name, position, text, photoLink, linkedinLink }) => {
+  const defaultLink = "/"; // Fallback URL
 
   return (
     <div className="relative group">
       <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r blur duration-400 group-hover:opacity-100 group-hover:duration-200" />
-      <a href={linkedinLink} className="cursor-pointer">
+      <Link href={linkedinLink || defaultLink} className="cursor-pointer">
         <div className="relative p-6 space-y-6 leading-none rounded-lg bg-green-100 ">
           <div className="flex items-center space-x-4">
             {photoLink ? (
@@ -32,7 +24,7 @@ const Tweet: React.FC<TweetProps> = ({ name, position, text, photoLink, linkedin
             ) : (
               <div>
                 <Image 
-                  src={defaultPhotoLink} 
+                  src="/default-photo.jpg" 
                   alt="Default Photo" 
                   width={60} 
                   height={60} 
@@ -47,7 +39,7 @@ const Tweet: React.FC<TweetProps> = ({ name, position, text, photoLink, linkedin
           </div>
           <p className="leading-normal text-gray-700 text-md">{text}</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
@@ -61,27 +53,6 @@ const Testimonies: React.FC = () => {
       text: "Find Good.",
       photoLink: "/founders/f2.jpg",
       linkedinLink: "https://www.linkedin.com/in/kanyewest/"
-    },
-    {
-      name: "Tim Cook",
-      position: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
-      photoLink: "/founders/f1.jpg",
-      linkedinLink: "https://www.linkedin.com/in/timcook/"
-    },
-    {
-      name: "Tim Cook",
-      position: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
-      photoLink: "/founders/f1.jpg",
-      linkedinLink: "https://www.linkedin.com/in/timcook/"
-    },
-    {
-      name: "Tim Cook",
-      position: "CEO of Apple",
-      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum.",
-      photoLink: "/founders/f1.jpg",
-      linkedinLink: "https://www.linkedin.com/in/timcook/"
     },
     {
       name: "Tim Cook",

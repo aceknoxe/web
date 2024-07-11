@@ -1,4 +1,3 @@
-// pages/_app.tsx
 import '../styles/globals.css';
 import '../styles/loading.css';
 import type { AppProps } from 'next/app';
@@ -8,7 +7,7 @@ import Loading from '../app/loading';
 import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [loading, setLoading] = useState(true); // Set initial loading state to true
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {

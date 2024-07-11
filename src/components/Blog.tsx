@@ -19,8 +19,8 @@ const BlogPreview: React.FC<BlogPreviewProps> = ({ post, onClick }) => (
       <Image
         src={post.image}
         alt={post.title}
-        width={400} // Adjust width based on your design
-        height={250} // Adjust height based on your design
+        width={400} // Adjust width 
+        height={250} // Adjust height 
         layout="responsive" // Use responsive layout for aspect ratio preservation
         objectFit="cover" // Maintain aspect ratio and cover container
         className="rounded"

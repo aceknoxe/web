@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
+
 const BlogPost = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -53,9 +54,9 @@ const BlogPost = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="container mx-auto px-4 py-8 mt-20"
+              className="container mx-auto px-4 py-8 sm:py-3 mt-10"
             >
-              <article className="bg-opacity-50 bg-emerald-50 p-8 rounded-lg shadow-md relative">
+              <article className="bg-opacity-50 bg-emerald-90 p-51 rounded-lg shadow-md relative">
                 <button
                   onClick={handleClose}
                   className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none"

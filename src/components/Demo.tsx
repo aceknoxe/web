@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
+
 const Demo: React.FC = () => {
   return (
     <section id="demo" className="py-20 bg-opacity-50 bg-emerald-50">
@@ -19,21 +20,22 @@ const Demo: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-3xl px-8 mx-auto sm:px-6 lg:max-w-5xl lg:px-8 mt-8">
+      <div className="max-w-3xl px-8 mx-auto sm:px-6 lg:max-w-5xl lg:px-8 mt-8 ">
         <div className="inline-block px-3 py-1 text-sm rounded-lg bg-emerald-100 bg-opacity-60 text-emerald-500 hover:cursor-pointer hover:bg-opacity-80">
           Technology
         </div>
         <h2 className="mt-4 bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-3xl font-medium text-transparent">
           Built with Next.js & TailwindCSS
         </h2>
-        <p className="mt-4 text-lg font-normal lg:max-w-3xl text-gray-700">
+        <p className="mt-4 text-lg font-normal  text-gray-700 ">
           Aliquam ultrices sagittis orci a scelerisque purus. Ligula ullamcorper malesuada proin libero nunc consequat.
         </p>
-        <div className="relative mt-8 rounded-xl h-96">
+        <div className=" relative mt-8 rounded-xl h-38">
           <Image
-            src="/images/product.png"
-            alt="placeholder"
-            layout="fill"
+            src="/photos/image1.png"
+            alt="bot"
+            height={210}
+            width={1110}
             objectFit="cover"
             className="rounded-xl"
           />
@@ -71,11 +73,12 @@ const Demo: React.FC = () => {
         <p className="mt-4 text-lg font-normal lg:max-w-3xl text-gray-700">
           Aliquam ultrices sagittis orci a scelerisque purus. Ligula ullamcorper malesuada proin libero nunc consequat.
         </p>
-        <div className="relative mt-8 rounded-xl h-96">
+        <div className=" relative mt-8 rounded-xl h-38">
           <Image
-            src="/images/product.jpg"
-            alt="placeholder"
-            layout="fill"
+            src="/photos/image1.png"
+            alt="bot"
+            height={210}
+            width={1110}
             objectFit="cover"
             className="rounded-xl"
           />

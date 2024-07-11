@@ -6,7 +6,7 @@ const Tweet: React.FC<{ name: string, position: string, text: string, photoLink:
   const defaultLink = "/"; // Fallback URL
 
   return (
-    <div className="relative group">
+    <div className="relative group ">
       <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r blur duration-400 group-hover:opacity-100 group-hover:duration-200" />
       <Link href={linkedinLink || defaultLink} className="cursor-pointer">
         <div className="relative p-6 space-y-6 leading-none rounded-lg bg-green-100 ">
@@ -51,6 +51,27 @@ const Testimonies: React.FC = () => {
       name: "Kanye West",
       position: "Rapper & Entrepreneur",
       text: "Find Good.",
+      photoLink: "/founders/f2.jpg",
+      linkedinLink: "https://www.linkedin.com/in/kanyewest/"
+    },
+    {
+      name: "Google",
+      position: "Search Engine",
+      text: "Data is mine",
+      photoLink: "/founders/f2.jpg",
+      linkedinLink: "https://www.linkedin.com/in/kanyewest/"
+    },
+    {
+      name: "MicroSoft",
+      position: "Windows",
+      text: "Ex- Most Valuable company",
+      photoLink: "/founders/f2.jpg",
+      linkedinLink: "https://www.linkedin.com/in/kanyewest/"
+    },
+    {
+      name: "Apple",
+      position: "ios",
+      text: "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Donec pretium vulputate",
       photoLink: "/founders/f2.jpg",
       linkedinLink: "https://www.linkedin.com/in/kanyewest/"
     },

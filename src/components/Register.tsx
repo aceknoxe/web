@@ -41,9 +41,9 @@ class Typing extends React.Component {
             style={{ whiteSpace: 'pre' }}
           />
         </div>        
-          <a  href="/register" className="px-4 py-2 bg-gradient-to-r from-[#1D976C] to-[#38ef7d] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-80 transition">
+          <Link href="/comingsoon" className="px-4 py-2 bg-gradient-to-r from-[#1D972C] to-[#38ef7d] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-80 transition">
             Register
-          </a>
+          </Link>
         
       </div>
     );

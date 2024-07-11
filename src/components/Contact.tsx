@@ -47,11 +47,14 @@ const ContactForm: React.FC = () => {
           message: formData.message
         };
 
+        // Log the template parameters
+        console.log("Sending email with parameters:", templateParams);
+
         const result = await emailjs.send(
-          'your_service_id',
-          'your_template_id',
+          'service_5iuo8pa', // replace with your EmailJS service ID
+          'template_moah9ab', // replace with your EmailJS template ID
           templateParams,
-          'your_user_id'
+          'NjY2alb_OH1qLNkf9'
         );
 
         if (result.status === 200) {
@@ -76,7 +79,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="bg-opacity-50 bg-emerald-50 flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-lg p-8 rounded-lg shadow-md text-center mt-3">
-        <h1 className="mt-4 py-1 text-4xl font-semibold text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
+        <h1 className="mt-4 py-1 text-5xl font-semibold text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
           Contact us
         </h1>
         <p className="mt-6 text-center text-gray-700">

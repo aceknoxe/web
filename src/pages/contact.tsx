@@ -17,9 +17,6 @@ const Lery: NextPage = () => {
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <div className="smooth-scroll h-full leading-normal text-gray-100">
-        <div
-          className="absolute top-0 left-0 right-0 bg-no-repeat bg-cover -bottom-full brightness-90 filter md:bottom-0 md:bg-center md:brightness-100"
-        />
         <Header />
         <Contact />
         <Footer />

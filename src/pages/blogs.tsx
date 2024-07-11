@@ -11,7 +11,7 @@ const Blogs = () => {
   return (
     <>
       <Head>
-        <title>My Blog</title>
+        <title>Blogs</title>
         <meta name="description" content="Example" />
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />

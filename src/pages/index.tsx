@@ -30,8 +30,8 @@ const Home: NextPage = () => {
         <Landing />
         <Features />        
         <Demo />
-        <Founders />
         <Photos />
+        <Founders /> 
         <Register/>
         <Footer />
       </div>

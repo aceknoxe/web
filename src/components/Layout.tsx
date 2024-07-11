@@ -1,7 +1,8 @@
 // src/components/Layout.tsx
-import { ReactNode } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { ReactNode, useEffect } from 'react';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { useRouter } from 'next/router';
+import { useScroll } from 'framer-motion';
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,6 +16,15 @@ const variants = {
 
 const Layout = ({ children }: LayoutProps) => {
   const router = useRouter();
+  const controls = useAnimation();
+  const { scrollY } = useScroll();
+
+  useEffect(() => {
+    scrollY.onChange((latest) => {
+      controls.start({ y: -latest });
+    });
+  }, [scrollY, controls]);
+
   return (
     <AnimatePresence mode="wait" initial={false}>
       <motion.div
@@ -24,8 +34,11 @@ const Layout = ({ children }: LayoutProps) => {
         animate="enter"
         exit="exit"
         transition={{ type: 'linear' }}
+        style={{ position: 'relative', overflow: 'hidden' }}
       >
-        {children}
+        <motion.div animate={controls} transition={{ type: 'tween', ease: 'easeOut', duration: 0.5 }}>
+          {children}
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   );

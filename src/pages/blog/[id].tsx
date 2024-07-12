@@ -6,19 +6,23 @@ import Footer from '../../components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
-
 const BlogPost = () => {
   const router = useRouter();
   const { id } = router.query;
   const post = blogs.find((blog) => blog.id === parseInt(id as string));
 
   const [isVisible, setIsVisible] = useState(true);
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
 
   const handleClose = () => {
     setIsVisible(false);
     setTimeout(() => {
       router.push('/blogs'); // Navigate to the homepage or replace '/' with the desired route
     }, 500); // Duration should match the exit animation duration
+  };
+
+  const handleImageClick = () => {
+    setIsImageExpanded(!isImageExpanded);
   };
 
   if (!post) {
@@ -56,7 +60,7 @@ const BlogPost = () => {
               transition={{ duration: 0.3 }}
               className="container mx-auto px-4 py-8 sm:py-3 mt-10"
             >
-              <article className="bg-opacity-50 bg-emerald-90 p-51 rounded-lg shadow-md relative">
+              <article className="bg-opacity-50 bg-emerald-90 p-5 rounded-lg shadow-md relative">
                 <button
                   onClick={handleClose}
                   className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none"
@@ -69,12 +73,21 @@ const BlogPost = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-96 object-cover mb-4 rounded-md"
+                  className={`w-full object-cover mb-4 rounded-md ${isImageExpanded ? 'h-screen' : 'h-96'}`}
                   loading="lazy"
+                  onClick={handleImageClick}
                 />
                 <p className="text-gray-700 mb-4">{post.content}</p>
                 <p className="text-sm text-gray-500">Author: {post.author}</p>
                 <p className="text-sm text-gray-500">Date: {post.date}</p>
+                <div className="flex justify-end mt-4">
+                  <button
+                    onClick={handleClose}
+                    className="text-gray-500 bg-green-100 py-2 px-4 border border-gray-300 rounded-3xl shadow-md hover:bg-gray-100 focus:outline-none"
+                  >
+                    Close
+                  </button>
+                </div>
               </article>
             </motion.main>
           )}

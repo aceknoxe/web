@@ -44,7 +44,7 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
 
   return (
     <motion.div
-      className="overflow-hidden flex text-5xl font-medium justify-center"
+      className="overflow-hidden flex text-3xl sm:text-2xl md:text-5xl font-medium justify-center"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -65,43 +65,42 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
 const Landing: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center bg-opacity-50 bg-emerald-50">
-        <div className="flex flex-col justify-center">
-          <div className="max-w-8xl mx-8 md:mx-auto mt-20 text-center">
-            <div className="my-20 space-y-10 text-center sm:my-16 md:space-y-14">
-              <div className="space-y-5 md:space-y-8  flex flex-col items-center">
-                <AnimatedTextCharacter text="Welcome to Gbot" />
-                <motion.h2
-                  className="text-2xl text-gray-700 md:text-2xl md:mx-10 md:text-gray-600"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                >
-                  we build empowering technologies.
-                </motion.h2>
-                <motion.h2
-                  className="text-xl text-gray-700 md:text-2xl md:mx-10 md:text-gray-600"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 1 }}
-                >
-                  our motive.
-                </motion.h2>
-              </div>
+      <div className="flex flex-col justify-center">
+        <div className="max-w-8xl mx-8 md:mx-auto mt-10 text-center">
+          <div className="my-20 space-y-10 text-center sm:my-16 md:space-y-14">
+            <div className="space-y-5 md:space-y-8 flex flex-col items-center">
+              <AnimatedTextCharacter text="Welcome to Gbot" />
+              <motion.h2
+                className="text-lg sm:text-xl md:text-2xl text-gray-700 md:text-gray-600"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+              >
+                we build empowering technologies.
+              </motion.h2>
+              <motion.h2
+                className="text-md sm:text-lg md:text-xl text-gray-700 md:text-gray-600"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
+                our motive.
+              </motion.h2>
             </div>
           </div>
-          <motion.div
-            className="flex justify-center mt-30"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
-          >
-            <Link href="#features" passHref>
-              <span className="text-gray-700 hover:text-gray-900 transition duration-500">
-                <FontAwesomeIcon icon={faArrowDown} />
-              </span>
-            </Link>
-          </motion.div>
         </div>
+        <motion.div
+          className="flex justify-center mt-30"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.5 }}
+        >
+          <Link href="#features" passHref
+            className="text-gray-700 hover:text-gray-900 transition duration-500 text-lg sm:text-xl md:text-2xl">
+            <FontAwesomeIcon icon={faArrowDown} />
+          </Link>
+        </motion.div>
+      </div>
     </section>
   );
 };

@@ -1,12 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import blogs from '../../public/blogs/blogs.json';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const Blogs = () => {
+  const router = useRouter();
   const [selectedBlog, setSelectedBlog] = useState(null);
+
+  // Reset selectedBlog state when navigating back to top
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setSelectedBlog(null);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
 
   return (
     <>

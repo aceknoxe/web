@@ -1,26 +1,32 @@
 [
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo1"
+    "title": "photo1",
+    "description": "A serene coconut still life with natural elements, capturing the essence of tranquility."
   },
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo2"
+    "title": "photo2",
+    "description": "An artistic shot of coconuts, emphasizing simplicity and natural beauty."
   },
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo3"
+    "title": "photo3",
+    "description": "A close-up view of coconuts, highlighting their textures and details."
   },
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo4"
+    "title": "photo4",
+    "description": "A beautiful arrangement of coconuts, showcasing their organic shapes and colors."
   },
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo5"
+    "title": "photo5",
+    "description": "A composition featuring coconuts, with a focus on their natural and rustic appeal."
   },
   {
     "src": "https://img.freepik.com/free-photo/coconut-still-life_23-2151526753.jpg?t=st=1718522981~exp=1718526581~hmac=abfbb70e570e1363e4935b5d797b32d823d20631723b952c03948dc561b2c314&w=1380",
-    "title": "photo6"
+    "title": "photo6",
+    "description": "A minimalist still life of coconuts, emphasizing simplicity and elegance."
   }
 ]

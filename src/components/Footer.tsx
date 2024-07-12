@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/member">
+                <Link href="/execome">
                   <span className="text-gray-500 hover:text-gray-700 cursor-pointer">Execome</span>
                 </Link>
               </li>
@@ -61,16 +61,16 @@ const Footer: React.FC = () => {
         <div className="flex justify-center py-7">
           <SocialLinks />
         </div>
-        <div className="text-center text-gray-700 mt-10">
-          <p className="text tex-semibold">
+        <div className="text-center text-gray-500 mt-10">
+          <p className="text text-semibold">
             Made by{' '}
             <a
               href="https://instagram.com/harigovindes"
-              className="underline text-green-300 hover:text-green-500"
+              className="underline text-green-500 hover:text-green-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              me
+              Harigovind
             </a>
           </p>
         </div>

@@ -13,12 +13,12 @@ const Header: React.FC = () => {
     <header className="fixed top-0 z-50 w-full bg-transparent backdrop-filter backdrop-blur bg-green-50 bg-opacity-80 h-15">
       <div className="relative flex items-center justify-between mx-auto max-w-7xl px-4">
         {/* Logo */}
-        <div className="flex mt-4">
-          <img src="/images/logo.png" alt="Logo" className="h-30 w-60" loading='lazy' />
+        <div className="flex mt-1">
+          <img src="/resources/logo.png" alt="Logo" className="h-30 w-60" loading='lazy' />
         </div>
         {/* Hamburger Button */}
         <button
-          className="relative w-10 h-5 flex flex-col justify-center items-center md:hidden focus:outline-none"
+          className="relative w-10 h-5 mt-1 flex flex-col justify-center items-center md:hidden focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle navigation"
         >

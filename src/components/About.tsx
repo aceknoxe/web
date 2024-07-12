@@ -16,7 +16,7 @@ const AboutPage: React.FC = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
                     <div className="max-w-md md:width-auto">
                         <Image
-                            src="/images/product.jpg"
+                            src="/photos/image.png"
                             alt="About Us Image"
                             className="rounded-lg shadow-md"
                             width={740}

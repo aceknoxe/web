@@ -65,18 +65,16 @@ const MasonryBlog: React.FC = () => {
                     <div className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full text-emerald-500"></div>
                   </div>
                 )}
+                <img
+                  className={`h-48 w-full sm:h-64 md:h-80 lg:h-96 rounded-lg object-cover object-center ${loadingImages[index] ? 'opacity-0' : 'opacity-100'}`}
+                  src={blog.src}
+                  alt={blog.title}
+                  onLoad={() => handleImageLoad(index)}
+                />
                 <div className="text-center mt-2">
                   <h2 className="flex text-lg text-gray-600 font-semibold">{blog.title}</h2>
                   <p className="flex text-sm text-gray-600">{blog.description}</p>
                 </div>
-                {!loadingImages[index] && (
-                  <img
-                    className={`h-48 w-full sm:h-64 md:h-80 lg:h-96 rounded-lg object-cover object-center opacity-100`}
-                    src={blog.src}
-                    alt={blog.title}
-                    onLoad={() => handleImageLoad(index)}
-                  />
-                )}
               </div>
             </div>
           ))}
@@ -136,4 +134,4 @@ const MasonryBlog: React.FC = () => {
   );
 };
 
-export default MasonryBlog;
+export default MasonryBlog

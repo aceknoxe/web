@@ -8,7 +8,7 @@ const oery: NextPage = () => {
   return (
     <>
       <Head>
-        <title>aceknox</title>
+        <title>Gallery</title>
         <meta content="Example" name="description" />
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />

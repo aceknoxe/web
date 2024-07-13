@@ -45,8 +45,8 @@ const BlogPost = () => {
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />
         <meta property="og:title" content="Example" />
-        <meta property="og:image" content="" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <meta property="og:image" content="/resources/favicon.png" />
+        <link rel="shortcut icon" href="/resources/favicon.png" />
       </Head>
       <div className="min-h-screen py-20 bg-opacity-50 bg-emerald-50 text-gray-900">
         <Header />
@@ -75,7 +75,7 @@ const BlogPost = () => {
                   alt={post.title}
                   className={`w-full object-cover mb-4 rounded-md ${isImageExpanded ? 'h-screen' : 'h-96'}`}
                   loading="lazy"
-                  onClick={handleImageClick}
+                  
                 />
                 <p className="text-gray-700 mb-4">{post.content}</p>
                 <p className="text-sm text-gray-500">Author: {post.author}</p>

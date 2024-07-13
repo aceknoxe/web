@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const AboutPage: React.FC = () => {
     return (
-        <div className="py-35 bg-opacity-50 bg-emerald-50">
+        <div className="py-20 bg-opacity-50 bg-emerald-50">
             <div className="mt-3 max-w-4xl mx-auto px-4 py-12">
-                <div className="mt-12 mb-5 text-center">
+                <div className="mt-6 mb-5 text-center">
                     <div className="inline-block px-3 py-1 text-sm rounded-lg bg-emerald-100 bg-opacity-60 text-emerald-500 hover:cursor-pointer hover:bg-opacity-80">
                         Technology
                     </div>

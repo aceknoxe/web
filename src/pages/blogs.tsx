@@ -31,12 +31,12 @@ const Blogs = () => {
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />
         <meta property="og:title" content="Example" />
-        <meta property="og:image" content="" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <meta property="og:image" content="/resources/favicon.png" />
+        <link rel="shortcut icon" href="/resources/favicon.png" />
       </Head>
-      <div className="min-h-screen py-20 bg-opacity-50 bg-emerald-50 text-gray-900">
+      <div className="min-h-screen flex flex-col bg-opacity-50 bg-emerald-50 text-gray-900">
         <Header />
-        <main className="mt-8 container mx-auto px-4 py-8">
+        <main className="flex-grow mt-8 container mx-auto px-4 py-8">
           <h1 className="mt-16 py-7 bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-3xl font-medium text-transparent text-center">Latest Blog Posts</h1>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogs.map((blog) => (

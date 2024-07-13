@@ -9,7 +9,7 @@ const lery: NextPage = () => {
   return (
     <>
       <Head>
-        <title>aceknox</title>
+        <title>Execome</title>
         <meta content="Example" name="description" />
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />

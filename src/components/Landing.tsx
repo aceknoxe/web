@@ -1,8 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 
 interface AnimatedTextCharacterProps {
   text: string[];
@@ -69,10 +66,10 @@ const Landing: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center bg-opacity-50 bg-emerald-50">
       <div className="flex flex-col justify-center">
-        <div className="max-w-8xl mx-8 md:mx-auto mt-1 text-center">
-          <div className="my-20 space-y-10 text-center sm:my-16 md:space-y-14">
+        <div className="max-w-8xl mx-auto text-center">
+          <div className="my-12 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">
-              <AnimatedTextCharacter text={['WELCOME', 'To', 'Gbot']} />
+              <AnimatedTextCharacter text={['WELCOME', 'TO', 'Gbot']} />
               <motion.h2
                 className="text-lg sm:text-4xl md:text-4xl text-gray-700 md:text-gray-600"
                 initial={{ opacity: 0, y: 50 }}
@@ -92,18 +89,6 @@ const Landing: React.FC = () => {
             </div>
           </div>
         </div>
-        <motion.div
-          className="flex justify-center mt-30"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-        >
-          <Link href="#features" legacyBehavior>
-            <a className="text-gray-700 hover:text-gray-900 transition duration-500 text-lg sm:text-xl md:text-2xl">
-              <FontAwesomeIcon icon={faArrowDown} />
-            </a>
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

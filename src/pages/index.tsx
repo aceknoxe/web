@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         <meta property="og:url" content="https://example.com" />
         <meta property="og:description" content="Example" />
         <meta property="og:title" content="Example" />
-        <meta property="og:image" content="/path/to/image.jpg" />
-        <link rel="shortcut icon" href="/images/logo (1).png "/>
+        <meta property="og:image" content="/resources/favicon.png" />
+        <link rel="shortcut icon" href="/resources/favicon.png"/>
       </Head>
       <div className="h-full leading-normal text-gray-100">
         <div

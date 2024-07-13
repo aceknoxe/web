@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutPage: React.FC = () => {
     return (
-        <div className="py-20 bg-opacity-50 bg-emerald-50">
+        <div className="py-35 bg-opacity-50 bg-emerald-50">
             <div className="mt-3 max-w-4xl mx-auto px-4 py-12">
                 <div className="mt-12 mb-5 text-center">
                     <div className="inline-block px-3 py-1 text-sm rounded-lg bg-emerald-100 bg-opacity-60 text-emerald-500 hover:cursor-pointer hover:bg-opacity-80">
@@ -13,7 +13,7 @@ const AboutPage: React.FC = () => {
                 <h1 className="mt-4 text-3xl font-medium text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
                     About Us
                 </h1>
-                <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
+                <div className="flex flex-col items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
                     <div className="max-w-md md:width-auto">
                         <Image
                             src="/photos/image.png"
@@ -28,9 +28,8 @@ const AboutPage: React.FC = () => {
                             Hello!
                         </p>
                         <p className="mt-4 text-lg text-gray-700">
-                            Nam ac velit vel augue fermentum efficitur. Ut pretium ipsum at
-                            nisl consequat bibendum. Fusce consectetur mi sed purus finibus
-                            sodales.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti doloremque architecto, unde provident perspiciatis quidem expedita exercitationem maiores vero iure totam hic placeat, temporibus animi libero dolore sapiente numquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta placeat amet aliquam. Similique illo voluptatibus, labore magnam cum dolores voluptas excepturi inventore laboriosam odio repudiandae, alias distinctio. Rem, dignissimos quam!
                         </p>
                     </div>
                 </div>

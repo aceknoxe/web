@@ -6,6 +6,12 @@
 html, body, #__next {
   height: 100%;
 }
+/* globals.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* card css */
 .card-hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))

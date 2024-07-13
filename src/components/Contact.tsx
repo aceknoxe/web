@@ -79,7 +79,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="bg-opacity-50 bg-emerald-50 flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-lg p-8 rounded-lg shadow-md text-center mt-3">
-        <h1 className="mt-4 py-1 text-5xl font-semibold text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
+        <h1 className="mt-8 py-1 text-5xl font-semibold text-center bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-transparent">
           Contact us
         </h1>
         <p className="mt-6 text-center text-gray-700">

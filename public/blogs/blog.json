@@ -1,0 +1,21 @@
+[
+    {
+      "src": "/blogs/blogimg/img2.jpg",
+      "title": "Blog Title 1",
+      "description": "Blog description 1",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet debitis ducimus, alias quisquam nulla odit natus reiciendis amet quas porro, nam maiores ut molestiae dolor accusantium et. Suscipit, quisquam nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet debitis ducimus, alias quisquam nulla odit natus reiciendis amet quas porro, nam maiores ut molestiae dolor accusantium et. Suscipit, quisquam nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet debitis ducimus, alias quisquam nulla odit natus reiciendis amet quas porro, nam maiores ut molestiae dolor accusantium et. Suscipit, quisquam nemo."
+    },
+    {
+      "src": "/blogs/blogimg/img2.jpg",
+      "title": "Blog Title 2",
+      "description": "Blog description 2",
+      "content": "Full content of blog 2..."
+    },
+    {
+        "src": "/blogs/blogimg/img3.jpg",
+        "title": "Blog Title 2",
+        "description": "Blog description 2",
+        "content": "Full content of blog 2..."
+      }
+  ]
+  

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 interface AnimatedTextCharacterProps {
-  text: string;
+  text: string[];
 }
 
 const container = {
@@ -40,25 +40,28 @@ const child = {
 };
 
 const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) => {
-  const letters = Array.from(text);
-
   return (
-    <motion.div
-      className="overflow-hidden flex text-3xl sm:text-2xl md:text-5xl font-medium justify-center"
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      {letters.map((letter, index) => (
-        <motion.span
-          variants={child}
+    <div className="flex flex-col sm:flex-row sm:justify-center sm:space-x-3">
+      {text.map((line, index) => (
+        <motion.div
           key={index}
-          className="bg-gradient-to-r from-green-900 to-green-500 bg-clip-text text-transparent"
+          className="overflow-hidden flex text-3xl sm:text-4xl md:text-5xl font-medium justify-center sm:justify-start"
+          variants={container}
+          initial="hidden"
+          animate="visible"
         >
-          {letter === ' ' ? '\u00A0' : letter}
-        </motion.span>
+          {Array.from(line).map((letter, i) => (
+            <motion.span
+              key={i}
+              variants={child}
+              className="bg-gradient-to-r from-green-900 to-green-500 bg-clip-text text-transparent"
+            >
+              {letter === ' ' ? '\u00A0' : letter}
+            </motion.span>
+          ))}
+        </motion.div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 
@@ -69,9 +72,9 @@ const Landing: React.FC = () => {
         <div className="max-w-8xl mx-8 md:mx-auto mt-10 text-center">
           <div className="my-20 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">
-              <AnimatedTextCharacter text="Welcome to Gbot" />
+              <AnimatedTextCharacter text={['WELCOME', 'To', 'Gbot']} />
               <motion.h2
-                className="text-lg sm:text-xl md:text-2xl text-gray-700 md:text-gray-600"
+                className="text-lg sm:text-4xl md:text-4xl text-gray-700 md:text-gray-600"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
@@ -95,9 +98,10 @@ const Landing: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          <Link href="#features" passHref
-            className="text-gray-700 hover:text-gray-900 transition duration-500 text-lg sm:text-xl md:text-2xl">
-            <FontAwesomeIcon icon={faArrowDown} />
+          <Link href="#features" legacyBehavior>
+            <a className="text-gray-700 hover:text-gray-900 transition duration-500 text-lg sm:text-xl md:text-2xl">
+              <FontAwesomeIcon icon={faArrowDown} />
+            </a>
           </Link>
         </motion.div>
       </div>

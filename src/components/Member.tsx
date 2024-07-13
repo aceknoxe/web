@@ -96,8 +96,8 @@ const MembersPage = () => {
 
   return (
     <div className='py-20 bg-opacity-50 bg-emerald-50'>
-      <div className="min-h-screen text-center bg-white-500 p-11 space-y-9 mt-9">
-        <h1 className="mt-10 bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-3xl font-medium text-transparent">Our Community Members</h1>
+      <div className="min-h-screen text-center bg-white-500 p-11 space-y-9 mt-7">
+        <h1 className="mt-6 bg-gradient-to-r from-[#1D976C] to-[#38ef7d] bg-clip-text text-3xl font-medium text-transparent">Our Community Members</h1>
         <section className="mb-10 space-y-5 md:text-center">
           <h2 className="inline-block px-3 py-1 text-sm rounded-lg bg-emerald-100 bg-opacity-60 text-emerald-500 hover:cursor-pointer hover:bg-opacity-80">Section 1</h2>
           <div className="flex flex-wrap gap-6 justify-center">

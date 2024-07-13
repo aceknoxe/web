@@ -13,8 +13,8 @@ const Lery: NextPage = () => {
         <meta property="og:url" content="example.com" />
         <meta property="og:description" content="Example" />
         <meta property="og:title" content="Example" />
-        <meta property="og:image" content="" />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <meta property="og:image" content="/resources/favicon.png" />
+        <link rel="shortcut icon" href="/resources/favicon.png" />
       </Head>
       <div className="smooth-scroll h-full leading-normal text-gray-100">
         <Header />

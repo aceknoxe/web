@@ -45,7 +45,7 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
       {text.map((line, index) => (
         <motion.div
           key={index}
-          className="overflow-hidden flex text-3xl sm:text-4xl md:text-5xl font-medium justify-center sm:justify-start"
+          className="overflow-hidden flex text-5xl sm:text-6xl md:text-6xl font-medium justify-center sm:justify-start"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -69,7 +69,7 @@ const Landing: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center bg-opacity-50 bg-emerald-50">
       <div className="flex flex-col justify-center">
-        <div className="max-w-8xl mx-8 md:mx-auto mt-10 text-center">
+        <div className="max-w-8xl mx-8 md:mx-auto mt-5 text-center">
           <div className="my-20 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">
               <AnimatedTextCharacter text={['WELCOME', 'To', 'Gbot']} />

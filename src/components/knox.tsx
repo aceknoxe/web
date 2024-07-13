@@ -114,7 +114,7 @@ const MasonryBlog: React.FC = () => {
                 alt={selectedBlog.title}
                 className="w-full h-auto max-h-64 object-contain rounded-2xl"
               />
-              <div className="mt-4">
+              <div className="mt-8">
                 <h2 className="text-xl font-semibold">{selectedBlog.title}</h2>
                 <p className="text-white-700">{selectedBlog.content}</p>
               </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link'; // Import Link from Next.js
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,13 @@ const Header: React.FC = () => {
       <div className="relative flex items-center justify-between mx-auto max-w-7xl px-4">
         {/* Logo */}
         <div className="flex mt-1">
-          <img src="/resources/logo.png" alt="Logo" className="h-30 w-60" loading='lazy' />
+          <Image
+            src="/resources/logo.png"
+            alt="Logo"
+            width={210}
+            height={50}
+            priority
+          />
         </div>
         {/* Hamburger Button */}
         <button
@@ -43,7 +50,7 @@ const Header: React.FC = () => {
         </button>
         {/* Dropdown Menu */}
         <AnimatePresence>
-          {(isOpen || window.innerWidth >= 768) && (
+          {(isOpen || typeof window !== 'undefined' && window.innerWidth >= 768) && (
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}

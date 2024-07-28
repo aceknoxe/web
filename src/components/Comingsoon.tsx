@@ -18,7 +18,7 @@ const Coming: React.FC = () => {
                 height={400}
                 width={400}
                 className="rounded-2xl"
-                priority={false} // {false} | {true}
+                priority
               />
               <div className='mt-16'>         
           <Link href="/" className=" px-4 py-2 bg-gradient-to-r from-[#1D972C] to-[#38ef7d] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-80 transition">

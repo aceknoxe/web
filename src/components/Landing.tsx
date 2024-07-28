@@ -42,7 +42,7 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
       {text.map((line, index) => (
         <motion.div
           key={index}
-          className="overflow-hidden flex text-5xl sm:text-6xl md:text-6xl font-medium justify-center sm:justify-start"
+          className="overflow-hidden flex text-6xl font-bold justify-center sm:justify-start"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -64,8 +64,8 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
 
 const Landing: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-opacity-50 bg-emerald-50">
-      <div className="flex flex-col justify-center">
+    <section className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-opacity-50 bg-emerald-50">
+      <div className="relative z-10 flex flex-col justify-center ">
         <div className="max-w-8xl mx-auto text-center">
           <div className="my-12 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">

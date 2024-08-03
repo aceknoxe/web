@@ -48,7 +48,7 @@ const BlogPost = () => {
         <meta property="og:image" content="/resources/favicon.png" />
         <link rel="shortcut icon" href="/resources/favicon.png" />
       </Head>
-      <div className="min-h-screen py-20 bg-opacity-50 bg-emerald-50 text-gray-900">
+      <div className="min-h-screen py-10 bg-opacity-50 bg-emerald-50 text-gray-900">
         <Header />
         <AnimatePresence>
           {isVisible && (
@@ -73,7 +73,7 @@ const BlogPost = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className={`w-full object-cover mb-4 rounded-md ${isImageExpanded ? 'h-screen' : 'h-96'}`}
+                  className={`w-full object-cover mb-4 rounded-md ${isImageExpanded ? 'h-screen' : 'h-66'}`}
                   loading="lazy"
                   
                 />

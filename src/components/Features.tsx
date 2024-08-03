@@ -36,7 +36,7 @@ const Features: React.FC = () => {
                 DYNAMIC TRAINING PROGRAMS
               </h3>
               <p className="text-gray-700">
-                Elevate your skills with our comprehensive training modules, accessible on the Gbot GECW website, designed to keep you ahead in the dynamic world of robotics.
+                Elevate your skills with our comprehensive training modules, accessible on the website, designed to keep you ahead in the dynamic world of robotics.
               </p>
             </div>
             <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">

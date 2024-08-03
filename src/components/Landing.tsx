@@ -69,7 +69,7 @@ const Landing: React.FC = () => {
         <div className="max-w-8xl mx-auto text-center">
           <div className="my-12 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">
-              <AnimatedTextCharacter text={['WELCOME', 'TO', 'Gbot']} />
+              <AnimatedTextCharacter text={['WELCOME', 'TO', 'KNOXE']} />
               <motion.h2
                 className="text-lg sm:text-4xl md:text-4xl text-gray-700 md:text-gray-600"
                 initial={{ opacity: 0, y: 50 }}

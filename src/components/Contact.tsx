@@ -51,10 +51,10 @@ const ContactForm: React.FC = () => {
         console.log("Sending email with parameters:", templateParams);
 
         const result = await emailjs.send(
-          'service_5iuo8pa', // replace with your EmailJS service ID
-          'template_moah9ab', // replace with your EmailJS template ID
+          '', // replace with your EmailJS service ID
+          '', // replace with your EmailJS template ID
           templateParams,
-          'NjY2alb_OH1qLNkf9'
+          ''
         );
 
         if (result.status === 200) {
@@ -83,7 +83,7 @@ const ContactForm: React.FC = () => {
           Contact us
         </h1>
         <p className="mt-6 text-center text-gray-700">
-          Email us at robotics@gecwyd.ac.in or message us here:
+          Email us at example.ac.in or message us here:
         </p>
 
         <form onSubmit={handleSubmit} className="mt-10">

@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Gbot GECW</title>
+        <title>KNOXE</title>
         <meta content="Example" name="description" />
         <meta property="og:url" content="https://example.com" />
         <meta property="og:description" content="Example" />

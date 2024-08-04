@@ -36,8 +36,8 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aceknoxe/web-knox.git
-   cd web-knox
+   git clone https://github.com/aceknoxe/web.git
+   cd web
    ```
 
 2. **Install dependencies:**
@@ -78,5 +78,5 @@ This project is hosted on Vercel free tier. To deploy your own version, follow t
 
 ## Give Us a Star ⭐
 
-If you like this project, please give us a star on [GitHub](https://github.com/aceknoxe/web-knox)! ⭐
+If you like this project, please give us a star on [GitHub](https://github.com/aceknoxe/web)! ⭐
 

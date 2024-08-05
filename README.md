@@ -66,9 +66,6 @@ Contributions are welcome! Please follow these steps to contribute:
 4. Push to the branch (`git push origin feature/new-feature`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Hosting
 This project is hosted on Vercel free tier. To deploy your own version, follow these steps:
@@ -80,3 +77,6 @@ This project is hosted on Vercel free tier. To deploy your own version, follow t
 
 If you like this project, please give us a star on [GitHub](https://github.com/aceknoxe/web)! ⭐
 
+## License
+
+This project is licensed under the MIT License. 

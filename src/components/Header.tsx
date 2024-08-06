@@ -1,14 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 z-50 w-full bg-transparent backdrop-filter backdrop-blur bg-green-50 bg-opacity-80 h-15">
@@ -50,7 +64,7 @@ const Header: React.FC = () => {
         </button>
         {/* Dropdown Menu */}
         <AnimatePresence>
-          {(isOpen || typeof window !== 'undefined' && window.innerWidth >= 768) && (
+          {(isOpen || isLargeScreen) && (
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}

@@ -11,20 +11,22 @@ const Coming: React.FC = () => {
         </h1>
         <div className="flex flex-col items-center justify-center md:justify-start space-y-4 md:space-y-0 md:space-x-8 mt-6">
           <div className="max-w-md">
-            <div className="relative w-full h-96 rounded-2xl shadow-md">
+            <div className="relative w-full h-80 md:h-96 rounded-2xl shadow-md">
               <Image
                 src="/resources/think.png"
                 alt="coming soon"
-                height={400}
-                width={400}
+                layout="fill"
+                objectFit="contain"
                 className="rounded-2xl"
                 priority
               />
-              <div className='mt-16'>         
-          <Link href="/" className=" px-4 py-2 bg-gradient-to-r from-[#1D972C] to-[#38ef7d] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-80 transition">
-            Go Back To Home
-          </Link>
-              </div>
+            </div>
+            <div className="mt-6">
+              <Link href="/" legacyBehavior>
+                <a className="px-4 py-2 bg-gradient-to-r from-[#1D972C] to-[#38ef7d] text-white font-semibold rounded-lg shadow-md hover:bg-opacity-80 transition">
+                  Go Back To Home
+                </a>
+              </Link>
             </div>
           </div>
         </div>

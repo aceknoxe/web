@@ -15,110 +15,16 @@ const Photos: React.FC = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam doloremque error, placeat distinctio commodi 
         </p>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4 px-2">
-          <div className="grid gap-2">
-            <div className="relative group h-60">
+          {['image4.png', 'image.png', 'image1.png', 'image2.png', 'image1.png', 'image2.png', 'image4.png', 'image3.png', 'image3.png', 'image4.png', 'image.png', 'image.png'].map((imageSrc, index) => (
+            <div key={index} className="relative group h-60">
               <Image
                 className="rounded-lg object-cover"
-                src="/photos/image4.png"
+                src={`/photos/${imageSrc}`}
                 alt="gallery-photo"
                 layout="fill"
               />
             </div>
-            <div className="relative group h-40">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image1.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <div className="relative group h-40">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image2.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image1.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-40">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image2.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image4.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-40">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image3.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image3.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-          </div>
-          <div className="grid gap-2">
-            <div className="relative group h-40">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image4.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-            <div className="relative group h-60">
-              <Image
-                className="rounded-lg object-cover"
-                src="/photos/image.png"
-                alt="gallery-photo"
-                layout="fill"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

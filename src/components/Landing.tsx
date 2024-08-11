@@ -62,10 +62,27 @@ const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({ text }) =
   );
 };
 
+const RippleEffect: React.FC = () => {
+  return (
+    <motion.div
+      className="absolute inset-0 flex items-center justify-center overflow-hidden"
+      initial={{ scale: 0, opacity: 0.7 }}
+      animate={{ scale: [0, 2, 4], opacity: [0.7, 0.3, 0] }}
+      transition={{
+        duration: 6,
+        ease: 'easeOut',
+      }}
+    >
+      <div className="w-96 h-96 rounded-full bg-green-500 bg-opacity-50" />
+    </motion.div>
+  );
+};
+
 const Landing: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-opacity-50 bg-emerald-50">
-      <div className="relative z-10 flex flex-col justify-center ">
+      <RippleEffect />
+      <div className="relative z-10 flex flex-col justify-center">
         <div className="max-w-8xl mx-auto text-center">
           <div className="my-12 space-y-10 text-center sm:my-16 md:space-y-14">
             <div className="space-y-5 md:space-y-8 flex flex-col items-center">

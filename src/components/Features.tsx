@@ -21,7 +21,7 @@ const Features: React.FC = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 grid-rows-2 gap-8 text-lg md:grid-cols-2 lg:grid-cols-3">
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faLaptopCode} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-700">
                 CUTTING-EDGE WORKSHOPS
@@ -30,7 +30,7 @@ const Features: React.FC = () => {
                 Immerse yourself in our hands-on workshops, unlocking the latest in robotics tech—a vital resource curated for enthusiasts on our new website.
               </p>
             </div>
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faUsers} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-800">
                 DYNAMIC TRAINING PROGRAMS
@@ -39,7 +39,7 @@ const Features: React.FC = () => {
                 Elevate your skills with our comprehensive training modules, accessible on the website, designed to keep you ahead in the dynamic world of robotics.
               </p>
             </div>
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faChalkboardTeacher} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-800">
                 BOUNDARY-DEFINING CLASSES
@@ -48,7 +48,7 @@ const Features: React.FC = () => {
                 Explore our innovative classes breaking traditional barriers, featured on our website to encourage limitless learning and creativity.
               </p>
             </div>
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faTools} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-800">
                 QUALITY EQUIPMENT
@@ -57,7 +57,7 @@ const Features: React.FC = () => {
                 The sea freight service has grown consider ably in recent years. We spend time getting to know.
               </p>
             </div>
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faHandsHelping} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-800">
                 COMMUNITY OUTREACH INITIATIVES
@@ -66,7 +66,7 @@ const Features: React.FC = () => {
                 Discover how Gbot extends its passion beyond campus through our outreach programs, connecting with schools and communities, detailed on our digital platform.
               </p>
             </div>
-            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-xl card-hover group space-y-5">
+            <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
               <FontAwesomeIcon icon={faRobot} className="text-[#322e37] bg-gradient-to-g from-[#5b585f] to-[#2d2a33] h-10 w-10 rounded-full border p-2 transition duration-400 group-hover:border-[#30FF7C] group-hover:shadow-[#30FF7C] group-hover:shadow-sm" />
               <h3 className="text-xl font-semibold text-gray-800">
                 EFFICIENT LABS

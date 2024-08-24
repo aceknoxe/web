@@ -63,7 +63,7 @@ const Features: React.FC = () => {
                 COMMUNITY OUTREACH INITIATIVES
               </h3>
               <p className="text-gray-700">
-                Discover how Gbot extends its passion beyond campus through our outreach programs, connecting with schools and communities, detailed on our digital platform.
+                Discover how bots extends its passion beyond campus through our outreach programs, connecting with schools and communities, detailed on our digital platform.
               </p>
             </div>
             <div className="flex shadow-md hover:shadow-green flex-col justify-between p-5 transition duration-400 bg-white bg-opacity-20 rounded-3xl card-hover group space-y-5">
@@ -72,7 +72,7 @@ const Features: React.FC = () => {
                 EFFICIENT LABS
               </h3>
               <p className="text-gray-700">
-                Discover how Gbot extends its passion beyond campus through our outreach programs, connecting with schools and communities, detailed on our digital platform.
+                Discover how bots extends its passion beyond campus through our outreach programs, connecting with schools and communities, detailed on our digital platform.
               </p>
             </div>
           </div>

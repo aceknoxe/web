@@ -7,7 +7,7 @@ const Tweet: React.FC<{ name: string, position: string, text: string, photoLink:
 
   return (
     <div className="relative group ">
-      <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r blur duration-400 group-hover:opacity-100 group-hover:duration-200" />
+      <div className="absolute transition rounded-xl opacity-25 -inset-1 bg-gradient-to-r blur duration-400 group-hover:opacity-100 group-hover:duration-200" />
       <Link href={linkedinLink || defaultLink} className="cursor-pointer">
         <div className="relative p-6 space-y-6 leading-none rounded-lg bg-green-100 ">
           <div className="flex items-center space-x-4">
